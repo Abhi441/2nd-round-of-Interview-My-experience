@@ -19,3 +19,30 @@ return this.httpClient.get<Project[]>("/api/projects");
 
 ///////////////////////
 Write the Signlton Code
+Q1> Why do we need a Singleton class?
+"To prevent multiple instances of a class, ensure a shared resource is accessed consistently, and save memory in scenarios where creating multiple instances would be resource-intensive.
+Q2> How do you implement a Singleton class in C#?
+Q3>What are the key components of a Singleton?
+Private constructor (to restrict instantiation).
+Static instance variable (to hold the single instance).
+Public static method (to provide global access).
+Thread safety (for multi-threaded environments).
+Q4>What are the common use cases of Singleton?
+Database connections.
+Logging mechanisms.
+Configuration management.
+Caching.
+Q5>How do you ensure thread safety in Singleton?
+Use a lock object in a get accessor.
+Alternatively, implement a Lazy Singleton using .NET's Lazy<T> class.
+Q6>What are the limitations or disadvantages of Singleton?
+Difficulty in unit testing due to tight coupling.
+Global state can lead to unexpected behaviors.
+May cause scalability issues if not used carefully.
+Q7>What is the difference between Singleton and Static Class?
+Singleton: Allows object initialization and can implement interfaces or inherit from other classes.
+Static Class: Contains only static members and cannot be instantiated, inherited, or implemented.
+Q8>What is the difference between eager and lazy initialization in Singleton?
+Eager Initialization: The instance is created at the time of application startup.
+Lazy Initialization: The instance is created only when it is first needed.
+
