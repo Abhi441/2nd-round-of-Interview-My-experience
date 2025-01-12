@@ -16,3 +16,6 @@ getAllProjects(): Observable<Project[]>
 {
 return this.httpClient.get<Project[]>("/api/projects");
 }
+
+///////////////////////
+Write the Signlton Code
